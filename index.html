@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Catering & Supplies | تغذية المصانع بدون هدر</title>
+
   <!-- SEO & Local Search Optimization -->
   <meta name="description" content="Prime Catering & Supplies - الشركة الرائدة في تغذية وتوريدات المصانع والشركات في العاشر من رمضان، مدينة بدر، وبلبيس. وجبات فطار وغداء للعمال والمهندسين بنظام 0% هدر وضمان الدقيقة الواحدة." />
   <meta name="keywords" content="توريد وجبات مصانع, كاترينج العاشر من رمضان, تغذية مصانع بدر, توريد وجبات عمال بلبيس, شركات كاترينج في مصر, Prime Catering, وجبات شركات, متعهد تغذية مصانع" />
@@ -29,3 +36,709 @@
     "servesCuisine": "Egyptian Industrial Catering"
   }
   </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --emerald: #062c21;
+      --emerald-mid: #0d4a38;
+      --gold: #e0b13a;
+      --gold-bright: #ffcf56;
+      --amber: #d97706;
+      --cream: #fdfbf7;
+      --text: #13221d;
+      --muted: #4b615a;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 14px; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    /* Top Urgency Bar */
+    .top-bar {
+      background: linear-gradient(90deg, var(--gold), var(--gold-bright), var(--gold));
+      color: var(--emerald);
+      text-align: center;
+      padding: 6px 12px;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    /* Navbar */
+    header {
+      background-color: var(--emerald);
+      padding: 10px 4%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1.5px solid rgba(224, 177, 58, 0.35);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: var(--emerald);
+    }
+
+    .brand-text h1 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--gold-bright);
+      line-height: 1.1;
+    }
+
+    .brand-text span {
+      font-size: 0.68rem;
+      color: #a7f3d0;
+      display: block;
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+      color: var(--emerald);
+      padding: 7px 14px;
+      border-radius: 7px;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 0.82rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: radial-gradient(circle at top right, #115e47, var(--emerald));
+      color: var(--white);
+      padding: 36px 5% 55px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 207, 86, 0.15);
+      border: 1px solid var(--gold-bright);
+      color: var(--gold-bright);
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 1.45rem;
+      font-weight: 900;
+      max-width: 720px;
+      margin: 0 auto 12px;
+      line-height: 1.35;
+    }
+
+    .hero h2 span { color: var(--gold-bright); }
+
+    .hero p {
+      font-size: 0.92rem;
+      color: #d1fae5;
+      max-width: 600px;
+      margin: 0 auto 22px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+      color: var(--emerald);
+      padding: 11px 22px;
+      border-radius: 9px;
+      font-weight: 900;
+      font-size: 0.92rem;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(224, 177, 58, 0.3);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+      border: 1.5px solid var(--gold);
+      padding: 11px 20px;
+      border-radius: 9px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    /* Trust Strip */
+    .trust-strip {
+      max-width: 1020px;
+      margin: -28px auto 25px;
+      padding: 0 4%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .trust-card {
+      background: var(--white);
+      padding: 15px 18px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(6, 44, 33, 0.06);
+      border-top: 3.5px solid var(--gold);
+    }
+
+    .trust-card h3 {
+      color: var(--emerald);
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .trust-card p {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    /* Section General */
+    .section {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 25px 4%;
+    }
+
+    /* Menu Header Box */
+    .menu-header-box {
+      background: linear-gradient(135deg, var(--emerald), var(--emerald-mid));
+      border-radius: 16px;
+      padding: 22px 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      border: 1.5px solid var(--gold);
+    }
+
+    .menu-header-box h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--gold-bright);
+      margin-bottom: 4px;
+    }
+
+    .menu-header-box p {
+      color: #ecfdf5;
+      font-size: 0.88rem;
+      margin-bottom: 16px;
+    }
+
+    /* Interactive Menu Buttons */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 10px 16px;
+      border: 1.5px solid var(--gold);
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      font-family: 'Cairo', sans-serif;
+      font-weight: 800;
+      font-size: 0.88rem;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--gold-bright), var(--amber));
+      color: var(--emerald);
+      border-color: var(--gold-bright);
+    }
+
+    /* Menu Grid & Cards */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+    }
+
+    .menu-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e6ece9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .menu-card.popular {
+      border: 2px solid var(--amber);
+      background: linear-gradient(180deg, #fffdf7 0%, #ffffff 100%);
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: -10px;
+      left: 14px;
+      background: linear-gradient(135deg, var(--amber), #b45309);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 15px;
+    }
+
+    .price-tag {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--amber);
+      margin: 4px 0;
+    }
+
+    .price-tag span {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .menu-card h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--emerald);
+    }
+
+    .menu-card p {
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-bottom: 14px;
+    }
+
+    .card-btn {
+      display: block;
+      text-align: center;
+      background: var(--emerald);
+      color: var(--gold-bright);
+      padding: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .hidden { display: none; }
+
+    /* Interactive Calculator */
+    .calc-box {
+      background: linear-gradient(135deg, var(--emerald), #0b3f30);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 24px 5%;
+      margin: 20px auto;
+      max-width: 1020px;
+      border: 1.5px solid var(--gold);
+    }
+
+    .calc-box h3 {
+      color: var(--gold-bright);
+      font-size: 1.3rem;
+      font-weight: 900;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+
+    .calc-box > p {
+      text-align: center;
+      color: #d1fae5;
+      font-size: 0.86rem;
+      margin-bottom: 18px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      align-items: end;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--gold-bright);
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: none;
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .calc-result {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.88rem;
+      border: 1px dashed var(--gold-bright);
+    }
+
+    .calc-result strong {
+      color: var(--gold-bright);
+      font-size: 1.15rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #041c15;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 25px 4% 80px;
+      margin-top: 30px;
+      font-size: 0.84rem;
+      border-top: 2px solid var(--gold);
+    }
+
+    footer h4 { color: var(--gold-bright); font-size: 1.1rem; margin-bottom: 6px; }
+    footer a { color: var(--gold-bright); text-decoration: none; font-weight: 700; }
+
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 1.3rem; }
+      .tab-btn { width: 100%; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    🎁 عرض خاص لمديري HR والمشتريات في العاشر وبدر وبلبيس: اطلب بوكس تذوق مجاني لمكتبك الآن!
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="brand">
+      <div class="brand-icon">P</div>
+      <div class="brand-text">
+        <h1>PRIME CATERING</h1>
+        <span>تغذية وتوريدات المصانع</span>
+      </div>
+    </a>
+    <a href="https://wa.me/201037318380?text=السلام%20عليكم%20Prime%20Catering،%20حابب%20أطلب%20بوكس%20تذوق%20مجاني%20للمصنع" class="nav-cta">
+      اطلب عينة مجانية
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="badge">نغطي العاشر من رمضان • مدينة بدر • بلبيس</div>
+    <h2>ادفع ثمن الوجبات اللي اتاكلت بس.. <span>ووفر 15% من ميزانية مصنعك!</span></h2>
+    <p>
+      تغذية صناعية بمعايير قياسية لعمالك ومهندسيك. تغليف حراري محكم، التزام بالثانية في مواعيد البريك، وفواتير ضريبية رسمية.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/201037318380?text=السلام%20عليكم،%20عايز%20بوكس%20تذوق%20مجاني%20لمصنعنا%20بكرة" class="btn-primary">
+        📦 احجز بوكس التذوق المجاني لمكتبك
+      </a>
+      <a href="#menu" class="btn-secondary">تصفح المنيو والأسعار 👇</a>
+    </div>
+  </section>
+
+  <!-- Guarantees -->
+  <div class="trust-strip">
+    <div class="trust-card">
+      <h3>⏱️ ضمان الدقيقة الواحدة</h3>
+      <p>ميعاد البريك خط أحمر. لو عربية التوريد اتأخرت 15 دقيقة عن ميعادك، وجبات اليوم مجاناً على حسابنا.</p>
+    </div>
+    <div class="trust-card">
+      <h3>📉 نظام 0% هدر (Zero Waste)</h3>
+      <p>مش هتدفع فلوس لعمال غايبين؛ بنستلم منك العدد الفعلي كل يوم الصبح بعد البصمة ونورّد على قده بالظبط.</p>
+    </div>
+    <div class="trust-card">
+      <h3>🔥 جودة وتغليف فندقي</h3>
+      <p>وجبات طازة يومياً في أطباق حرارية محكمة الغلق + عيش طازة + مخلل ومنديل، جاهزة للتوزيع فوراً.</p>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="section" id="menu">
+    <div class="menu-header-box">
+      <h2>🍽️ المنيو</h2>
+      <p>اختار القسم اللي يناسب ورديات مصنعك واضغط عليه لعرض الوجبات والأسعار فوراً 👇</p>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('breakfast', this)">☀️ لمنيو الفطار دوس هنا (10 - 20 ج)</button>
+        <button class="tab-btn" onclick="showTab('lunch', this)">🍲 لمنيو الغداء الأسبوعي دوس هنا (40 - 70 ج)</button>
+        <button class="tab-btn" onclick="showTab('vip', this)">⭐ لمنيو المهندسين و VIP دوس هنا</button>
+      </div>
+    </div>
+
+    <!-- Breakfast Tab -->
+    <div id="breakfast" class="menu-grid">
+      <div class="menu-card">
+        <div>
+          <h4>باقة بداية اليوم</h4>
+          <div class="price-tag">10 <span>جنيه / وجبة</span></div>
+          <p>علبة فول محكمة الغلق بالتحويجة المصرية والزيت الحار والليمون + 3 رغيف عيش بلدي طازة + مخلل + منديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20الفطار%2010%20جنيه" class="card-btn">اطلب عرض سعر للباقة</a>
+      </div>
+
+      <div class="menu-card popular">
+        <span class="popular-tag">الأكثر طلباً للمصانع 🔥</span>
+        <div>
+          <h4>باقة الطاقة المتكاملة</h4>
+          <div class="price-tag">15 <span>جنيه / وجبة</span></div>
+          <p>3 ساندوتشات متنوعة ومشبعة (فول بالتحويجة + طعمية سخنة + بطاطس صوابع أو باذنجان مخلل) + علبة مخلل + منديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20الفطار%2015%20جنيه" class="card-btn">اطلب عرض سعر للباقة</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>باقة السوبر</h4>
+          <div class="price-tag">20 <span>جنيه / وجبة</span></div>
+          <p>3 ساندوتشات غنية (فول بالخلطة + طعمية محشية + بيض مسلوق أو شكشوكة أو جبنة بالطماطم) + مخلل + عصير أو مياه + منديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20الفطار%2020%20جنيه" class="card-btn">اطلب عرض سعر للباقة</a>
+      </div>
+    </div>
+
+    <!-- Lunch Tab -->
+    <div id="lunch" class="menu-grid hidden">
+      <div class="menu-card popular">
+        <span class="popular-tag">متاح يومياً 🔥</span>
+        <div>
+          <h4>سوبر كشري Prime</h4>
+          <div class="price-tag">40 <span>جنيه / وجبة</span></div>
+          <p>علبة كشري كبير مشبعة بالصلصة والدقة والشطة والحمص والتقلية + ملعقة ومنديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20وجبة%20سوبر%20كشري%2040%20جنيه" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة السبت (فراخ)</h4>
+          <div class="price-tag">65 <span>جنيه / وجبة</span></div>
+          <p>ربع فرخة + أرز بالشعرية + خضار اليوم + عيش + مخلل + ملعقة ومنديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة الأحد (لحمة)</h4>
+          <div class="price-tag">70 <span>جنيه / وجبة</span></div>
+          <p>قطعة لحمة + أرز بالشعرية + خضار اليوم + عيش + مخلل + ملعقة ومنديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة الإثنين (بانيه)</h4>
+          <div class="price-tag">50 <span>جنيه / وجبة</span></div>
+          <p>2 قطعة بانيه مقرمش + أرز بسمتي + عيش + مخلل + ملعقة ومنديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة الثلاثاء (طاجن)</h4>
+          <div class="price-tag">55 <span>جنيه / وجبة</span></div>
+          <p>طاجن مكرونة بالفراخ ساخن + عيش + مخلل + ملعقة ومنديل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة الأربعاء (كبدة)</h4>
+          <div class="price-tag">50 <span>جنيه / وجبة</span></div>
+          <p>كبدة إسكندراني + مكرونة بالصلصة + سلطة طحينة + عيش + مخلل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>وجبة الخميس (كفتة)</h4>
+          <div class="price-tag">60 <span>جنيه / وجبة</span></div>
+          <p>3 صوابع كفتة مشوية + أرز بالشعرية + سلطة خضراء + عيش + مخلل.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20منيو%20الغداء%20الاسبوعي" class="card-btn">احجز للمصنع</a>
+      </div>
+    </div>
+
+    <!-- VIP Tab -->
+    <div id="vip" class="menu-grid hidden">
+      <div class="menu-card">
+        <div>
+          <h4>باقة الإنجاز للمهندسين</h4>
+          <div class="price-tag">90 - 95 <span>جنيه</span></div>
+          <p>ربع فرخة أو ربع كفتة أو 3 قطع شيش طاووق + أرز بسمتي + 2 سمبوسك + سلطة + عيش.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20الإنجاز%20VIP" class="card-btn">اطلب الباقة</a>
+      </div>
+
+      <div class="menu-card popular">
+        <span class="popular-tag">الأكثر طلباً للإدارة 🔥</span>
+        <div>
+          <h4>باقة البروتين المتكاملة</h4>
+          <div class="price-tag">100 - 115 <span>جنيه</span></div>
+          <p>اختيارك من (ربع مشوي/مندي، ربع كفتة، 4 شيش، شريحة لحمة، 5 استربس، أو كباب حلة) + أرز + خضار + سلطة/ثومية + عيش.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20البروتين%20VIP" class="card-btn">اطلب الباقة</a>
+      </div>
+
+      <div class="menu-card">
+        <div>
+          <h4>باقة كبار الزوار (ضيوف المصنع)</h4>
+          <div class="price-tag">190 - 195 <span>جنيه</span></div>
+          <p>نصف فرخة أو ميكس جريل أو نصف كيلو كفتة أو 200 جم لحمة + أرز بسمتي + سلطة + عيش + عصير.</p>
+        </div>
+        <a href="https://wa.me/201037318380?text=استفسار%20عن%20باقة%20كبار%20الزوار%20VIP" class="card-btn">اطلب الباقة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instant Quote Calculator -->
+  <section class="section">
+    <div class="calc-box">
+      <h3>احسب تكلفة مصنعك في 5 ثواني ⚡</h3>
+      <p>اكتب عدد العمال واختار الباقة عشان يطلعلك التقدير الفوري وتبعتهولنا بضغطة زرار</p>
+      <div class="calc-grid">
+        <div class="form-group">
+          <label>اسم المصنع / الشركة</label>
+          <input type="text" id="factoryName" placeholder="مثال: مصنع النور للبلاستيك" />
+        </div>
+        <div class="form-group">
+          <label>عدد الوجبات اليومية</label>
+          <input type="number" id="workersCount" value="100" min="10" oninput="calculateCost()" />
+        </div>
+        <div class="form-group">
+          <label>نوع الباقة</label>
+          <select id="mealPrice" onchange="calculateCost()">
+            <option value="10">فطار اقتصادي (10 ج)</option>
+            <option value="15" selected>فطار الطاقة (15 ج)</option>
+            <option value="20">فطار السوبر (20 ج)</option>
+            <option value="40">سوبر كشري (40 ج)</option>
+            <option value="55">متوسط منيو الغداء الأسبوعي (55 ج)</option>
+            <option value="100">غداء المهندسين VIP (100 ج)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button onclick="sendWhatsAppQuote()" class="btn-primary" style="width:100%; border:none; cursor:pointer;">
+            ابعت الطلب على واتساب 🚀
+          </button>
+        </div>
+      </div>
+      <div class="calc-result">
+        التكلفة اليومية التقديرية: <strong id="dailyTotal">1,500 جنيه</strong> &nbsp;|&nbsp;
+        توفير متوقع بنظام 0% هدر: <strong id="monthlySave">~4,500 جنيه شهرياً</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h4>Prime Catering & Industrial Supplies</h4>
+    <p>شريكك المعتمد لتغذية المصانع والشركات في العاشر من رمضان • مدينة بدر • بلبيس</p>
+    <p style="margin-top: 8px;">
+      📞 الإدارة والتعاقدات: <a href="tel:01037318380">01037318380</a> &nbsp;|&nbsp;
+      ✉️ البريد الرسمي: <a href="mailto:info.primecatering.eg@gmail.com">info.primecatering.eg@gmail.com</a>
+    </p>
+    <p style="font-size: 0.75rem; margin-top: 10px; opacity: 0.7;">© 2026 Prime Catering Egypt. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/201037318380?text=السلام%20عليكم%20Prime%20Catering،%20محتاجين%20عرض%20سعر%20تغذية%20لمصنعنا" class="wa-float">
+    💬 تواصل واتساب مباشر
+  </a>
+
+  <script>
+    function showTab(tabId, btn) {
+      document.getElementById('breakfast').classList.add('hidden');
+      document.getElementById('lunch').classList.add('hidden');
+      document.getElementById('vip').classList.add('hidden');
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function calculateCost() {
+      const count = parseInt(document.getElementById('workersCount').value) || 0;
+      const price = parseInt(document.getElementById('mealPrice').value) || 0;
+      const daily = count * price;
+      const monthlySave = Math.round(daily * 26 * 0.12);
+      document.getElementById('dailyTotal').innerText = daily.toLocaleString('ar-EG') + ' جنيه';
+      document.getElementById('monthlySave').innerText = '~' + monthlySave.toLocaleString('ar-EG') + ' جنيه شهرياً';
+    }
+
+    function sendWhatsAppQuote() {
+      const factory = document.getElementById('factoryName').value || 'مصنع جديد';
+      const count = document.getElementById('workersCount').value;
+      const select = document.getElementById('mealPrice');
+      const packageName = select.options[select.selectedIndex].text;
+      const msg = `السلام عليكم Prime Catering،\nاسم المصنع: ${factory}\nعدد الوجبات المطلوبة يومياً: ${count} وجبة\nالباقة المختارة: ${packageName}\nحابين نطلب بوكس تذوق مجاني وعرض سعر رسمي.`;
+      window.open(`https://wa.me/201037318380?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
